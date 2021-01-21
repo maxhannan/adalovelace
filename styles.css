@@ -1,23 +1,30 @@
 body{
     margin: 0;
+    font-family: monospace;
+    display: flex;
 }
 a:link {
-    color: white; 
-    background-color: transparent; 
+    color: #cccccc; 
+
     text-decoration: none;
+    background-color: white;
   }
   
   a:visited {
-    color: white;
-    background-color: transparent;
+    
     text-decoration: none;
   }
   
   a:hover {
-    color: pink;
-    background-color: transparent;
+
+    color: green;
     text-decoration: underline;
   }
+.a2:hover{
+    background-color: white;
+    color: black;
+
+}
 #box-container {
 
     display: flex;
@@ -27,7 +34,7 @@ a:link {
   }
 #title{
     position: relative;
-    background-color: #f8ca4d;
+
     max-width: 0;
     
 }
@@ -37,18 +44,18 @@ a:link {
     max-width: 0;
 }
 h1{
-    font-size: 15vh;
+    font-size: 12vh;
     position: relative;
     top: 37vh;
     right:30vh;
-    color: #212121;
+    color: black;
     
     
 }
 h2{
-    font-size: 15vh;
+    font-size: 12vh;
     position: relative;
-    top: 34.5vh;
+    top: 35.5vh;
     right: 25px;
     color: white;
 }
@@ -56,26 +63,102 @@ img{
     max-width: 90%;
     max-height: 90%;
     align-self: center;
-
 }
 p{
-    padding-left: 5%;
-    padding-top: 57.5vh;
     max-height:100vh;
     max-width: 90%;
-    font-size: 4vh;
+    font-size: 3.5vh;
     color: white;
     
 }
+
 #box-1{
     padding-top: 65px;
-    background-color: white;
+    background-color:  white;    ;
     width: 50%;
     
 }
 #box-2{
-    background-color: #212121;
+    background-color: black;
     width: 50%;
     overflow-x: scroll;
     text-align: left;
+    
 }
+#textone{
+    margin-top: 100vh;
+    padding-left: 5%;
+    
+    
+}
+.anchor{
+    display: block;
+    height: 130px; /*same height as header*/
+    margin-top: 0px; /*same height as header*/
+    visibility: hidden;
+  }
+  .blinking-cursor {
+    font-weight: 100;
+    font-size: 12vh;
+    color: #2E3D48;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes "blink" {
+    from, to {
+        background-color: white;
+        color: black;
+    }
+    50% {
+        background-color: black;
+        color:white;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+        background-color: white;
+        color: black;
+    }
+    50% {
+        background-color: black;
+        color:white;
+    }
+  }
+  
+  @-webkit-keyframes "blink" {
+    from, to {
+        background-color: white;
+        color: black;
+    }
+    50% {
+        background-color: black;
+        color:white;
+    }
+  }
+  
+  @-ms-keyframes "blink" {
+    from, to {
+        background-color: white;
+        color: black;
+    }
+    50% {
+        background-color: black;
+        color:white;
+    }
+  }
+  
+  @-o-keyframes "blink" {
+    from, to {
+        background-color: white;
+        color: black;
+    }
+    50% {
+        background-color: black;
+        color:white;
+    }
+  }
