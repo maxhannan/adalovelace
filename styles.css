@@ -1,7 +1,9 @@
-body{
+body {
     margin: 0;
     font-family: monospace;
     display: flex;
+    scroll-behavior: smooth;
+    overflow: hidden;
 }
 a:link {
     color: #cccccc; 
@@ -20,16 +22,21 @@ a:link {
     color: green;
     text-decoration: underline;
   }
+
 .a2:hover{
     background-color: white;
     color: black;
+    text-decoration: none;
+    
 
 }
-#box-container {
+#box-container .smooth-container{
 
     display: flex;
     height: 100vh;
-    flex-direction:row;
+    flex-direction:row ;
+    scroll-behavior: smooth;
+    position: fixed;
     
   }
 #title{
@@ -44,30 +51,39 @@ a:link {
     max-width: 0;
 }
 h1{
-    font-size: 12vh;
-    position: relative;
+    font-size: 120vh;
+    font-size: 6.5vw;
+    position: absolute;
     top: 37vh;
-    right:30vh;
+    right:4vh;
+
     color: black;
     
     
 }
 h2{
-    font-size: 12vh;
-    position: relative;
-    top: 35.5vh;
-    right: 25px;
+    font-size: 10vh;
+    font-size: 4.5vw;
+    position: absolute;
+    top: 40vh;
+    left: -1vw;
     color: white;
-}
-img{
-    max-width: 90%;
-    max-height: 90%;
     align-self: center;
 }
+img{
+    max-width:40vmax;
+    
+    max-height: 90%;
+    align-self: center;
+    position: fixed;
+    
+}
+
 p{
     max-height:100vh;
-    max-width: 90%;
-    font-size: 3.5vh;
+    max-width: 100%;
+    font-size: 3.45vh;
+    font-size: 1.8vw;
     color: white;
     
 }
@@ -76,36 +92,49 @@ p{
     padding-top: 65px;
     background-color:  white;    ;
     width: 50%;
+    text-align: left;
+    overflow-y: hidden;
+    float: left;
+    
     
 }
-#box-2{
+#box-2 {
     background-color: black;
     width: 50%;
     overflow-x: scroll;
-    text-align: left;
-    
+    text-align: center;
+    scroll-behavior: smooth;
+    float: left;
 }
 #textone{
     margin-top: 100vh;
     padding-left: 5%;
+    padding-right: 5%;
     
     
 }
-.anchor{
+.anchortop{
     display: block;
-    height: 130px; /*same height as header*/
+    height: 0px; /*same height as header*/
     margin-top: 0px; /*same height as header*/
     visibility: hidden;
   }
+.anchor{
+    display: block;
+    height: 0px; /*same height as header*/
+    margin-top: 135px; /*same height as header*/
+    visibility: hidden;
+  }
   .blinking-cursor {
-    font-weight: 100;
-    font-size: 12vh;
+    font-size: 10vh;
+    font-size: 4vw;
     color: #2E3D48;
     -webkit-animation: 1s blink step-end infinite;
     -moz-animation: 1s blink step-end infinite;
     -ms-animation: 1s blink step-end infinite;
     -o-animation: 1s blink step-end infinite;
     animation: 1s blink step-end infinite;
+    flex-wrap: nowrap;
   }
   
   @keyframes "blink" {
